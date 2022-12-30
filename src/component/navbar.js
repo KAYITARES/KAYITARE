@@ -1,9 +1,10 @@
 import React,{useState} from 'react';
 import './navbar.css';
 import logo from "../assets/images/logo.png";
-import menu from '../assets/images/icons8-xbox-menu-64.png';
+
 
 const Navbar=()=>{
+  
     const [openNav,setOpenNav]=useState(false)
     return(
         <div className="navbar">
@@ -13,7 +14,8 @@ const Navbar=()=>{
         </div>
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button" onClick={()=>{
-        setOpenNav(!openNav)
+        setOpenNav(!openNav);
+        
       }}>
         <span class="navigation__icon">&nbsp;</span>
       </label>
@@ -22,13 +24,18 @@ const Navbar=()=>{
         {/* <div className="menu-btn">
         <img src={menu} className='menu-img'/>
         </div> */}
-        <div className="button-icon"></div>
+        <div className="button-icon" ></div>
         <ul   className={
           openNav ? "navbar-links expanded" : "navbar-links"
-        }>
+          
+        } >
+           
           {/* <li><a href='#' className='navbar-link'>Home</a></li> */}
           <li>
-            <a href="#" className="navbar-link">
+            <a href="#about" className="navbar-link" onClick={()=>{
+        setOpenNav(false);
+        
+      }}>
                 <span>01. </span>
               About
             </a>

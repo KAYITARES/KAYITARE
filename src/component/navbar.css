@@ -177,3 +177,13 @@
     top: 0;
     transform: rotate(-135deg);
   }
+  .overlay {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.347);
+    z-index: 1;
+}
