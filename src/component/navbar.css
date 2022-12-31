@@ -16,6 +16,13 @@
     justify-content: space-between;
     padding:3rem;
   }
+  img.navbar-logo__logo{
+    transition: all 4s;
+    backface-visibility: hidden;
+  }
+  img.navbar-logo__logo:hover {
+    transform: rotate(250deg) scale(1.1);
+  }
   .menu-img{
     width: 32px;
     height: 32px;

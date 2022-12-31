@@ -2,13 +2,18 @@ import React from "react";
 import Typed from "react-typed";
 import Navbar from "../component/navbar";
 import imges from "../assets/images/cycy.png";
+
 import './home.css';
 import AboutUs from "../component/about";
+import HashLoader from "react-spinners/HashLoader";
 
 const Home=()=>{
+ 
+  
     return(
         <>
-         <Navbar/>
+     
+     <Navbar/>
       <div className="home-container">
         <div className="sub-home">
           {/*      
@@ -89,7 +94,8 @@ const Home=()=>{
         {/* </div> */}
       </div>
      <AboutUs/>
-        </>
+     </>
+      
     )
 }
 export default Home;

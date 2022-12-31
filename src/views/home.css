@@ -1,3 +1,41 @@
+.home{
+  width:100%;
+  background-color:#404040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.spinner-logo{
+  animation: spinnerAnimation 2s ease-out 0s infinite alternate both;
+ object-fit: cover;
+ width:5rem;
+ height:5rem;
+ display: flex;
+
+}
+@keyframes spinnerAnimation{
+  0%{
+   transform: rotate(0deg) scale(0.8);
+  }
+  
+  50%{
+    transform: rotate(45deg) scale(0.9);
+  }
+  75%{
+    transform: rotate(180deg) scale(1);
+  }
+  100%{
+    
+      width: 6rem;
+      height:6rem;
+      transform: rotate(-180deg) scale(1.5);
+      object-fit: cover;
+    
+  }
+
+  
+}
 .home-container{
     background-image: url('../assets/images/background.jpeg');
     height: 86vh;
