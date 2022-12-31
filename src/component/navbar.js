@@ -8,6 +8,7 @@ const Navbar=()=>{
     const [openNav,setOpenNav]=useState(false)
     return(
         <div className="navbar">
+         <div className='navbar-container'>
         <div className="navbar-logo">
           <img src={logo} className="navbar-logo__logo" />
           <h1 className="navbar-logo__text">KAYITARE ~ Cynthia</h1>
@@ -66,6 +67,7 @@ const Navbar=()=>{
           </li>
         </ul>
       </div>
+      </div> 
     )
 }
 export default Navbar;

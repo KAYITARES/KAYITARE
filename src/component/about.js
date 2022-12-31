@@ -3,7 +3,10 @@ import './about.css'
 
 const AboutUs=()=>{
 return(
-    <div className="about-container" id="about"></div>
+    <div className="about-container" id="about">
+        
+     
+    </div>
 )
 }
 export default AboutUs;
