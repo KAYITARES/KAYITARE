@@ -33,9 +33,24 @@
 .ul-links {
   list-style-type: none;
   display: flex;
+  text-align: center;
+  justify-content: center;
   -webkit-box-align: center;
   flex-direction: column;
-  /* gap: 2rem; */
+  gap: 1rem;
+  position: fixed;
+  
+}
+.ul-links li a{
+  padding:1rem;
+  transition: all .3s;
+  color:#8892b0;
+}
+.ul-links li svg{
+width:2rem;
+height:2rem;
+transition: all .1s;
+
 }
 .icon-link:link,
 .icon-link:visited {
@@ -56,10 +71,18 @@
 .email-link::after {
   content: "";
   display: block;
-  width: 1px;
+  width: 2px;
   height: 90px;
   margin: 0 auto;
   background: #dddd;
+}
+.ul-links li a:hover{
+  
+  
+}
+.ul-links li a svg:hover{
+  color:#3fb9b4;
+  transform: translateY(-3px);
 }
 .email-link {
   display: flex;
@@ -69,7 +92,7 @@
   justify-content: flex-end;
 bottom: 0;
 right:3rem;
-  position: absolute;
+  position: fixed;
   /* margin-right: 3rem; */
   /* height: 93%; */
 }
